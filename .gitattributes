@@ -1,3 +1,5 @@
 * text=auto eol=lf
+# Preserve the exact JSON source bytes used by the immutable initial Windows-authored release.
+examples/**/*.json text eol=crlf
 *.png binary
 *.zip binary
