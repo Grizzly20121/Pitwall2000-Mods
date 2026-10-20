@@ -163,6 +163,10 @@ Additional runtime numeric checks apply to the generated structural schemas:
   Speed-profile samples: 0–150 m/s; speed-zone fractions: [0,1), multiplier: (0,5].
   Runtime ideal offsets: ±100 m, clearance: 0–20 m, merge hold: [0,1].
   Optional kerb arrays are empty or match the road sample count, with widths 0–20 m.
+- Measured runtime road length must be 200–30000 m with no collapsed consecutive road
+  segments; measured pit length must be greater than 20 m through 5000 m.
+  Pit-box and apex coordinates use the same bounded point contract as the road.
+  Pit-box route-fraction and offset arrays must match; fractions are [0,1] and offsets ±100 m.
 
 Use the exported game's `--validate-mod` command for these semantic checks.
 The Python packager checks structural schemas and file safety; it cannot prove a complete
