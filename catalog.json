@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "publishedUtc": "2026-10-20T14:46:13.170956+00:00",
+  "packages": [
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "pitwall.bundle",
+        "name": "Harbor Workshop Collection",
+        "version": "1.0.0",
+        "author": "Pitwall 2000 Workshop",
+        "description": "Original, redistributable teaching example: Harbor Workshop Collection.",
+        "gameVersions": ">=0.4.4.0 <0.5.0.0",
+        "license": "CC0-1.0",
+        "categories": [
+          "modpacks"
+        ],
+        "dependencies": [
+          {
+            "id": "pitwall.season",
+            "version": "=1.0.0"
+          }
+        ],
+        "conflicts": [],
+        "replacements": [],
+        "requiredFeatures": [],
+        "content": {},
+        "preview": "preview.png"
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.bundle-1.0.0.zip",
+      "size": 1102,
+      "sha256": "660e4f89fc50c390441ebf686a85ace53173932ecad7a596625fcde53449562d",
+      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/bundle/1.0.0/preview.png"
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "pitwall.livery",
+        "name": "Harbor Sunrise livery",
+        "version": "1.0.0",
+        "author": "Pitwall 2000 Workshop",
+        "description": "Original, redistributable teaching example: Harbor Sunrise livery.",
+        "gameVersions": ">=0.4.4.0 <0.5.0.0",
+        "license": "CC0-1.0",
+        "categories": [
+          "liveries"
+        ],
+        "dependencies": [
+          {
+            "id": "pitwall.vehicle",
+            "version": "=1.0.0"
+          }
+        ],
+        "conflicts": [],
+        "replacements": [],
+        "requiredFeatures": [],
+        "content": {
+          "liveries": "liveries.json"
+        },
+        "preview": "preview.png"
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.livery-1.0.0.zip",
+      "size": 1469,
+      "sha256": "3f4ff205d6d2b27640bb58981c80b99de0545c085e3408ae6fc5d7e816da5423",
+      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/livery/1.0.0/preview.png"
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "pitwall.mixed",
+        "name": "Tern car and paint",
+        "version": "1.0.0",
+        "author": "Pitwall 2000 Workshop",
+        "description": "Original, redistributable teaching example: Tern car and paint.",
+        "gameVersions": ">=0.4.4.0 <0.5.0.0",
+        "license": "CC0-1.0",
+        "categories": [
+          "vehicles",
+          "liveries",
+          "modpacks"
+        ],
+        "dependencies": [],
+        "conflicts": [],
+        "replacements": [],
+        "requiredFeatures": [],
+        "content": {
+          "vehicles": "vehicles.json",
+          "liveries": "liveries.json"
+        },
+        "preview": "preview.png"
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.mixed-1.0.0.zip",
+      "size": 1805,
+      "sha256": "d9c6f345b97eaa18dbeb96ed93fdd42186a07c601d44a37928fa5ae0744fa30e",
+      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/mixed/1.0.0/preview.png"
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "pitwall.roster",
+        "name": "Harbor club teams and drivers",
+        "version": "1.0.0",
+        "author": "Pitwall 2000 Workshop",
+        "description": "Original, redistributable teaching example: Harbor club teams and drivers.",
+        "gameVersions": ">=0.4.4.0 <0.5.0.0",
+        "license": "CC0-1.0",
+        "categories": [
+          "driversTeams"
+        ],
+        "dependencies": [
+          {
+            "id": "pitwall.vehicle",
+            "version": "=1.0.0"
+          }
+        ],
+        "conflicts": [],
+        "replacements": [],
+        "requiredFeatures": [],
+        "content": {
+          "driversTeams": "roster.json"
+        },
+        "preview": "preview.png"
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.roster-1.0.0.zip",
+      "size": 1853,
+      "sha256": "3f3fbb401fefe2d92748f07aa4807b7e5c1023a86a74f2ad5455e2eaa0227748",
+      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/roster/1.0.0/preview.png"
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "pitwall.season",
+        "name": "Harbor Club Championship",
+        "version": "1.0.0",
+        "author": "Pitwall 2000 Workshop",
+        "description": "Original, redistributable teaching example: Harbor Club Championship.",
+        "gameVersions": ">=0.4.4.0 <0.5.0.0",
+        "license": "CC0-1.0",
+        "categories": [
+          "seasons"
+        ],
+        "dependencies": [
+          {
+            "id": "pitwall.track",
+            "version": "=1.0.0"
+          },
+          {
+            "id": "pitwall.vehicle",
+            "version": "=1.0.0"
+          },
+          {
+            "id": "pitwall.roster",
+            "version": "=1.0.0"
+          },
+          {
+            "id": "pitwall.livery",
+            "version": "=1.0.0"
+          }
+        ],
+        "conflicts": [],
+        "replacements": [],
+        "requiredFeatures": [],
+        "content": {
+          "seasons": "seasons.json"
+        },
+        "preview": "preview.png"
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.season-1.0.0.zip",
+      "size": 1683,
+      "sha256": "f0c95ae57d75e086fa3b37bfc245ddd25c2bd4b73b491aa1c5490859b91ed84d",
+      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/season/1.0.0/preview.png"
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "pitwall.track",
+        "name": "Harbor Practice Circuit",
+        "version": "1.0.0",
+        "author": "Pitwall 2000 Workshop",
+        "description": "Original, redistributable teaching example: Harbor Practice Circuit.",
+        "gameVersions": ">=0.4.4.0 <0.5.0.0",
+        "license": "CC0-1.0",
+        "categories": [
+          "tracks"
+        ],
+        "dependencies": [],
+        "conflicts": [],
+        "replacements": [],
+        "requiredFeatures": [],
+        "content": {
+          "tracks": "tracks.json"
+        },
+        "preview": "preview.png"
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.track-1.0.0.zip",
+      "size": 42883,
+      "sha256": "53a62b89e9a28a5858306946ac61c38566b2daf648fcc0be54677fdeacb0057b",
+      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/track/1.0.0/preview.png"
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "pitwall.vehicle",
+        "name": "Kestrel R4",
+        "version": "1.0.0",
+        "author": "Pitwall 2000 Workshop",
+        "description": "Original, redistributable teaching example: Kestrel R4.",
+        "gameVersions": ">=0.4.4.0 <0.5.0.0",
+        "license": "CC0-1.0",
+        "categories": [
+          "vehicles"
+        ],
+        "dependencies": [],
+        "conflicts": [],
+        "replacements": [],
+        "requiredFeatures": [],
+        "content": {
+          "vehicles": "vehicles.json"
+        },
+        "preview": "preview.png"
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.vehicle-1.0.0.zip",
+      "size": 1461,
+      "sha256": "ce88076a0798f67296970f8814a6dea740c1e8d6fdafb7eb6e7dea82223b616f",
+      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/vehicle/1.0.0/preview.png"
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "pitwall.vehicle",
+        "name": "Kestrel R4",
+        "version": "1.1.0",
+        "author": "Pitwall 2000 Workshop",
+        "description": "Original, redistributable teaching example: Kestrel R4.",
+        "gameVersions": ">=0.4.4.0 <0.5.0.0",
+        "license": "CC0-1.0",
+        "categories": [
+          "vehicles"
+        ],
+        "dependencies": [],
+        "conflicts": [],
+        "replacements": [],
+        "requiredFeatures": [],
+        "content": {
+          "vehicles": "vehicles.json"
+        },
+        "preview": "preview.png"
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.vehicle-1.1.0.zip",
+      "size": 1462,
+      "sha256": "c792497cac954f8e9886e007ec254e91347f7700c472d13d84505bd53d8158b4",
+      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/vehicle/1.1.0/preview.png"
+    }
+  ]
+}
