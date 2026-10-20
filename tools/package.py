@@ -29,6 +29,7 @@ def read(path):
         if isinstance(v,list):require(len(v)<=20000,"Array limit");[inspect(x) for x in v]
         elif isinstance(v,dict):[inspect(x) for x in v.values()]
         elif isinstance(v,str):require(len(v)<=16384,"Text limit")
+        elif isinstance(v,float):require(__import__("math").isfinite(v),"Non-finite JSON")
     inspect(value);return value
 def safe(relative):
     require(len(relative)<=180 and "\\" not in relative and ":" not in relative and "%" not in relative,"Unsafe path")
@@ -87,11 +88,12 @@ def validate(folder):
     if "preview" in m:safe(m["preview"]);require((folder/m["preview"]).is_file(),"Missing preview")
     return m,files
 def package(folder,destination):
+    folder=folder.resolve()
     m,files=validate(folder);destination.parent.mkdir(parents=True,exist_ok=True)
     require(not destination.exists(),"Destination exists; retain immutable package bytes")
     with zipfile.ZipFile(destination,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for p in files:
-            info=zipfile.ZipInfo(p.relative_to(folder).as_posix(),(2026,10,20,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
+            info=zipfile.ZipInfo(p.relative_to(folder).as_posix(),(2026,10,20,0,0,0));info.create_system=0;info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
             z.writestr(info,p.read_bytes())
     require(destination.stat().st_size<=64*1024*1024,"Archive exceeds 64 MiB")
     with zipfile.ZipFile(destination) as z:
