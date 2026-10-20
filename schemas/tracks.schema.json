@@ -1,0 +1,692 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pitwall2000:mod-api:1:tracks",
+  "title": "Pitwall 2000 tracks API 1",
+  "allOf": [
+    {
+      "type": "array",
+      "maxItems": 20000,
+      "items": {
+        "$ref": "#/$defs/ModTrack"
+      }
+    }
+  ],
+  "$defs": {
+    "ModTrack": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "definition": {
+          "$ref": "#/$defs/TrackDefinition"
+        },
+        "runtime": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "geometry": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    },
+    "TrackDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "modRuntime": {
+          "$ref": "#/$defs/TrackSpace"
+        },
+        "pathGeometryVersion": {
+          "type": "integer"
+        },
+        "mapAspect": {
+          "type": "number"
+        },
+        "tacticalGeometry": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "schematicSvg": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "visualTexture": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "country": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "region": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "eventImage": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "defaultLapCount": {
+          "type": "integer"
+        },
+        "eligibleSeriesIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        },
+        "lengthMeters": {
+          "type": "number"
+        },
+        "carriagewayWidthMeters": {
+          "type": "number"
+        },
+        "gridRowSpacingMeters": {
+          "type": "number"
+        },
+        "gridFrontOffsetMeters": {
+          "type": "number"
+        },
+        "gridStaggerMeters": {
+          "type": "number"
+        },
+        "racingSpeedMultiplier": {
+          "type": "number"
+        },
+        "speedProfileMetersPerSecond": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "accelerationMetersPerSecondSquared": {
+          "type": "number"
+        },
+        "lateralAccelerationMetersPerSecondSquared": {
+          "type": "number"
+        },
+        "brakingMetersPerSecondSquared": {
+          "type": "number"
+        },
+        "speedZones": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/TrackSpeedZone"
+          }
+        },
+        "cornerCount": {
+          "type": "integer"
+        },
+        "overtakingDifficulty": {
+          "type": "number"
+        },
+        "attackDistanceMultiplier": {
+          "type": "number"
+        },
+        "passingLookaheadSeconds": {
+          "type": "number"
+        },
+        "passingClearanceMeters": {
+          "type": "number"
+        },
+        "wallOffsetMeters": {
+          "type": "number"
+        },
+        "tyreWearFactor": {
+          "type": "number"
+        },
+        "fuelConsumptionFactor": {
+          "type": "number"
+        },
+        "startingWetness": {
+          "type": "number"
+        },
+        "grip": {
+          "type": "number"
+        },
+        "pitLossSeconds": {
+          "type": "number"
+        },
+        "pitSpeedLimitKph": {
+          "type": "number"
+        },
+        "pitEntryFraction": {
+          "type": "number"
+        },
+        "pitMergeFraction": {
+          "type": "number"
+        },
+        "pitPathLengthMeters": {
+          "type": "number"
+        },
+        "pitGeometryVersion": {
+          "type": "integer"
+        },
+        "startFinish": {
+          "$ref": "#/$defs/NormalizedPoint"
+        },
+        "pitEntryConnectorEnd": {
+          "type": "number"
+        },
+        "pitExitConnectorStart": {
+          "type": "number"
+        },
+        "sectors": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/TrackSectorDefinition"
+          }
+        },
+        "pathPoints": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/NormalizedPoint"
+          }
+        },
+        "pitPathPoints": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/NormalizedPoint"
+          }
+        },
+        "pitEntryPathPoints": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/NormalizedPoint"
+          }
+        },
+        "pitLanePathPoints": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/NormalizedPoint"
+          }
+        },
+        "pitExitPathPoints": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/NormalizedPoint"
+          }
+        },
+        "pitExitMerge": {
+          "$ref": "#/$defs/NormalizedPoint"
+        },
+        "gridPositions": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/NormalizedPoint"
+          }
+        },
+        "pitBoxFractions": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "pitQueueFractions": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "corners": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/TrackCornerDefinition"
+          }
+        }
+      }
+    },
+    "TrackSpace": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "imported": {
+          "type": "boolean"
+        },
+        "rawLine": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "boundaryLeft": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "boundaryRight": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "drsZones": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {}
+        },
+        "specialZones": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {}
+        },
+        "eventPoints": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {}
+        },
+        "sourceSha256": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "viewBox": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "metresPerUnit": {
+          "type": "number"
+        },
+        "road": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "fractions": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "pit": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "workingLane": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "left": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "right": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "kerbLeft": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "kerbRight": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "racingKerbLeft": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "racingKerbRight": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "ideal": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "gradeSeparations": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/GradeSeparation"
+          }
+        },
+        "drivingClearanceMeters": {
+          "type": "number"
+        },
+        "apexes": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/Apex"
+          }
+        },
+        "pitBoxes": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/Box"
+          }
+        },
+        "entry": {
+          "type": "number"
+        },
+        "merge": {
+          "type": "number"
+        },
+        "mergeHold": {
+          "type": "number"
+        },
+        "pitLength": {
+          "type": "number"
+        },
+        "fastStart": {
+          "type": "number"
+        },
+        "fastEnd": {
+          "type": "number"
+        },
+        "limitEntry": {
+          "type": "number"
+        },
+        "limitRelease": {
+          "type": "number"
+        },
+        "sectors": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "serviceAccess": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/ServicePost"
+          }
+        }
+      }
+    },
+    "GradeSeparation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lowerRoute": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "upperRoute": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "coverRoute": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "hideVehicles": {
+          "type": "boolean"
+        },
+        "lowerStart": {
+          "type": "number"
+        },
+        "lowerEnd": {
+          "type": "number"
+        },
+        "upperStart": {
+          "type": "number"
+        },
+        "upperEnd": {
+          "type": "number"
+        },
+        "coverStart": {
+          "type": "number"
+        },
+        "coverEnd": {
+          "type": "number"
+        }
+      }
+    },
+    "Apex": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "fraction": {
+          "type": "number"
+        },
+        "point": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "offset": {
+          "type": "number"
+        }
+      }
+    },
+    "Box": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "index": {
+          "type": "integer"
+        },
+        "entryFraction": {
+          "type": "number"
+        },
+        "exitFraction": {
+          "type": "number"
+        },
+        "headingDegrees": {
+          "type": "number"
+        },
+        "routeFractions": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "routeOffsets": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "fraction": {
+          "type": "number"
+        },
+        "offset": {
+          "type": "number"
+        },
+        "position": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "approach": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "departure": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "ServicePost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "position": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "fraction": {
+          "type": "number"
+        },
+        "lane": {
+          "type": "number"
+        },
+        "source": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    },
+    "TrackSpeedZone": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fraction": {
+          "type": "number"
+        },
+        "approachFraction": {
+          "type": "number"
+        },
+        "speedMultiplier": {
+          "type": "number"
+        }
+      }
+    },
+    "NormalizedPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        }
+      }
+    },
+    "TrackSectorDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "endFraction": {
+          "type": "number"
+        }
+      }
+    },
+    "TrackCornerDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "number": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "fraction": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

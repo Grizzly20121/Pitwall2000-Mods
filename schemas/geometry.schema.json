@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pitwall2000:mod-api:1:geometry",
+  "title": "Pitwall 2000 geometry API 1",
+  "allOf": [
+    {
+      "$ref": "#/$defs/Document"
+    }
+  ],
+  "$defs": {
+    "Document": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "imported": {
+          "type": "boolean"
+        },
+        "largeVisualIndex": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "vectorBatches": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/VectorBatch"
+          }
+        },
+        "background": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "metresPerUnit": {
+          "type": "number"
+        },
+        "shapes": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/Surface"
+          }
+        },
+        "labels": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/Annotation"
+          }
+        },
+        "viewBox": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "svgPath": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "occlusionSvgPath": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "occlusionViewBox": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "VectorBatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "edgeDirections": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "edgeAlpha": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "points": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "color": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "bounds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "Surface": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "layer": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "points": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "fill": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "stroke": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "width": {
+          "type": "number"
+        },
+        "closed": {
+          "type": "boolean"
+        },
+        "dash": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    },
+    "Annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "text": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "kind": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "size": {
+          "type": "number"
+        },
+        "fill": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    }
+  }
+}

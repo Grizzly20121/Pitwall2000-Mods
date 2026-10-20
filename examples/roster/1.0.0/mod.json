@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "modApiVersion": 1,
+  "id": "pitwall.roster",
+  "name": "Harbor club teams and drivers",
+  "version": "1.0.0",
+  "author": "Pitwall 2000 Workshop",
+  "description": "Original, redistributable teaching example: Harbor club teams and drivers.",
+  "gameVersions": ">=0.4.4.0 <0.5.0.0",
+  "license": "CC0-1.0",
+  "categories": [
+    "driversTeams"
+  ],
+  "dependencies": [
+    {
+      "id": "pitwall.vehicle",
+      "version": "=1.0.0"
+    }
+  ],
+  "conflicts": [],
+  "replacements": [],
+  "requiredFeatures": [],
+  "content": {
+    "driversTeams": "roster.json"
+  },
+  "preview": "preview.png"
+}

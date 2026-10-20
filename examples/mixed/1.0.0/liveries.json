@@ -1,0 +1,25 @@
+[
+  {
+    "id": "pitwall.mixed.paint",
+    "name": "Tern blue",
+    "vehicleId": "pitwall.mixed.tern",
+    "design": {
+      "baseColor": "#287FBA",
+      "secondaryColor": "#112E4B",
+      "accentColor": "#F8EFC2",
+      "pattern": "Chevron",
+      "number": "27",
+      "text": "HARBOR",
+      "graphics": [
+        {
+          "shape": "Circle",
+          "color": "#F8EFC2",
+          "x": 0.5,
+          "y": 0.68,
+          "width": 0.22,
+          "height": 0.14
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,25 @@
+[
+  {
+    "id": "pitwall.livery.sunrise",
+    "name": "Harbor Sunrise",
+    "vehicleId": "pitwall.vehicle.kestrel-r4",
+    "design": {
+      "baseColor": "#F36B21",
+      "secondaryColor": "#112E4B",
+      "accentColor": "#F8EFC2",
+      "pattern": "Chevron",
+      "number": "27",
+      "text": "HARBOR",
+      "graphics": [
+        {
+          "shape": "Circle",
+          "color": "#F8EFC2",
+          "x": 0.5,
+          "y": 0.68,
+          "width": 0.22,
+          "height": 0.14
+        }
+      ]
+    }
+  }
+]

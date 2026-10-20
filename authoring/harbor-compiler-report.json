@@ -1,0 +1,58 @@
+{
+  "geometry": {
+    "metres_per_svg_unit": 1.0,
+    "declared_length_m": 1553.9822368615503,
+    "runtime_length_m": 1553.8594570591904,
+    "width_m": [
+      19.998493923004418,
+      20.00037708020353
+    ],
+    "pit_length_m": 378.6545379111125,
+    "pit_boxes": 10,
+    "pit_junction_gaps_m": [
+      0.0,
+      0.0
+    ],
+    "pit_endpoint_snap_m": [
+      0.0,
+      0.0
+    ],
+    "sectors": [
+      0.28217754382860266,
+      0.6608896239788355,
+      1.0
+    ],
+    "events": 1,
+    "smoothing": {
+      "raw_length_m": 1553.963312429647,
+      "runtime_polyline_length_m": 1553.8594570591904,
+      "fitted_curve_length_m": 1553.8792277363134,
+      "maximum_deviation_m": 0.024572534882433158,
+      "protected_anchor_error_m": 0.0,
+      "protected_samples": 56,
+      "explicit_anchors": 0,
+      "knots": 518,
+      "corridor_samples": 4144,
+      "closure": "periodic C1 Hermite, shared endpoint tangent",
+      "configuration": {
+        "sampling_interval_m": 3,
+        "fitting_tolerance_m": 0.03,
+        "max_displacement_m": 0.15,
+        "tangent_strength": 0.2,
+        "passes": 2,
+        "anchor_tolerance_m": 0.05
+      }
+    }
+  },
+  "issues": [
+    {
+      "severity": "WARNING",
+      "code": "SCALE_PROVENANCE",
+      "problem": "original_design",
+      "object_id": "SCALE_A",
+      "layer": "TECHNICAL",
+      "correction": "Retain provenance; independently survey if that accuracy is required.",
+      "blocks_import": false
+    }
+  ]
+}

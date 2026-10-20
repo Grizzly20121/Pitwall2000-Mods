@@ -1,0 +1,386 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pitwall2000:mod-api:1:runtime",
+  "title": "Pitwall 2000 runtime API 1",
+  "allOf": [
+    {
+      "$ref": "#/$defs/TrackSpace"
+    }
+  ],
+  "$defs": {
+    "TrackSpace": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "imported": {
+          "type": "boolean"
+        },
+        "rawLine": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "boundaryLeft": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "boundaryRight": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "drsZones": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {}
+        },
+        "specialZones": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {}
+        },
+        "eventPoints": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {}
+        },
+        "sourceSha256": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "viewBox": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "metresPerUnit": {
+          "type": "number"
+        },
+        "road": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "fractions": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "pit": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "workingLane": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "left": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "right": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "kerbLeft": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "kerbRight": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "racingKerbLeft": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "racingKerbRight": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "ideal": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "gradeSeparations": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/GradeSeparation"
+          }
+        },
+        "drivingClearanceMeters": {
+          "type": "number"
+        },
+        "apexes": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/Apex"
+          }
+        },
+        "pitBoxes": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/Box"
+          }
+        },
+        "entry": {
+          "type": "number"
+        },
+        "merge": {
+          "type": "number"
+        },
+        "mergeHold": {
+          "type": "number"
+        },
+        "pitLength": {
+          "type": "number"
+        },
+        "fastStart": {
+          "type": "number"
+        },
+        "fastEnd": {
+          "type": "number"
+        },
+        "limitEntry": {
+          "type": "number"
+        },
+        "limitRelease": {
+          "type": "number"
+        },
+        "sectors": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "serviceAccess": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/ServicePost"
+          }
+        }
+      }
+    },
+    "GradeSeparation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lowerRoute": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "upperRoute": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "coverRoute": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "hideVehicles": {
+          "type": "boolean"
+        },
+        "lowerStart": {
+          "type": "number"
+        },
+        "lowerEnd": {
+          "type": "number"
+        },
+        "upperStart": {
+          "type": "number"
+        },
+        "upperEnd": {
+          "type": "number"
+        },
+        "coverStart": {
+          "type": "number"
+        },
+        "coverEnd": {
+          "type": "number"
+        }
+      }
+    },
+    "Apex": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "fraction": {
+          "type": "number"
+        },
+        "point": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "offset": {
+          "type": "number"
+        }
+      }
+    },
+    "Box": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "index": {
+          "type": "integer"
+        },
+        "entryFraction": {
+          "type": "number"
+        },
+        "exitFraction": {
+          "type": "number"
+        },
+        "headingDegrees": {
+          "type": "number"
+        },
+        "routeFractions": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "routeOffsets": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "fraction": {
+          "type": "number"
+        },
+        "offset": {
+          "type": "number"
+        },
+        "position": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "approach": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        },
+        "departure": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "array",
+            "maxItems": 20000,
+            "items": {
+              "type": "number"
+            }
+          }
+        }
+      }
+    },
+    "ServicePost": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "position": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "number"
+          }
+        },
+        "fraction": {
+          "type": "number"
+        },
+        "lane": {
+          "type": "number"
+        },
+        "source": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    }
+  }
+}

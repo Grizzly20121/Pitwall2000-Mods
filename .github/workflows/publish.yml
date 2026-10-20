@@ -1,0 +1,37 @@
+name: Publish reviewed packages
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Immutable release tag for reviewed source
+        required: true
+        default: examples-v1
+permissions:
+  contents: write
+concurrency: workshop-publish
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Validate reviewed source
+        run: python tools/package.py examples --all
+      - name: Publish and verify anonymous download bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ inputs.tag }}
+        run: python tools/publish.py --tag "$RELEASE_TAG"
+      - name: Commit verified catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update verified mod catalog"
+            git push origin HEAD:main
+          fi

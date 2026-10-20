@@ -1,0 +1,218 @@
+{
+  "teams": [
+    {
+      "id": "pitwall.roster.team-1",
+      "name": "Harbor Racing",
+      "shortName": "Harbor",
+      "primaryColor": "#F36B21",
+      "driverIds": [
+        "pitwall.roster.driver-1",
+        "pitwall.roster.driver-2"
+      ],
+      "vehicleDefinitionIds": [
+        "pitwall.vehicle.kestrel-r4"
+      ],
+      "startingBudget": 120000,
+      "reputation": 12
+    },
+    {
+      "id": "pitwall.roster.team-2",
+      "name": "Juniper Motorsport",
+      "shortName": "Juniper",
+      "primaryColor": "#267BB0",
+      "driverIds": [
+        "pitwall.roster.driver-3",
+        "pitwall.roster.driver-4"
+      ],
+      "vehicleDefinitionIds": [
+        "pitwall.vehicle.kestrel-r4"
+      ],
+      "startingBudget": 120000,
+      "reputation": 12
+    },
+    {
+      "id": "pitwall.roster.team-3",
+      "name": "Lantern Autosport",
+      "shortName": "Lantern",
+      "primaryColor": "#64A062",
+      "driverIds": [
+        "pitwall.roster.driver-5",
+        "pitwall.roster.driver-6"
+      ],
+      "vehicleDefinitionIds": [
+        "pitwall.vehicle.kestrel-r4"
+      ],
+      "startingBudget": 120000,
+      "reputation": 12
+    },
+    {
+      "id": "pitwall.roster.team-4",
+      "name": "Cove Competition",
+      "shortName": "Cove",
+      "primaryColor": "#B65FB1",
+      "driverIds": [
+        "pitwall.roster.driver-7",
+        "pitwall.roster.driver-8"
+      ],
+      "vehicleDefinitionIds": [
+        "pitwall.vehicle.kestrel-r4"
+      ],
+      "startingBudget": 120000,
+      "reputation": 12
+    }
+  ],
+  "drivers": [
+    {
+      "id": "pitwall.roster.driver-1",
+      "firstName": "Arden",
+      "lastName": "Vale",
+      "age": 20,
+      "nationality": "Germany",
+      "pace": 65,
+      "racecraft": 70,
+      "consistency": 92,
+      "wetWeatherSkill": 70,
+      "qualifyingSkill": 70,
+      "overtaking": 65,
+      "defending": 65,
+      "potential": 85,
+      "overallRating": 70,
+      "reputation": 10,
+      "salaryExpectation": 700,
+      "fitness": 95
+    },
+    {
+      "id": "pitwall.roster.driver-2",
+      "firstName": "Mika",
+      "lastName": "Reed",
+      "age": 21,
+      "nationality": "Germany",
+      "pace": 66,
+      "racecraft": 70,
+      "consistency": 92,
+      "wetWeatherSkill": 70,
+      "qualifyingSkill": 70,
+      "overtaking": 65,
+      "defending": 65,
+      "potential": 85,
+      "overallRating": 70,
+      "reputation": 10,
+      "salaryExpectation": 700,
+      "fitness": 95
+    },
+    {
+      "id": "pitwall.roster.driver-3",
+      "firstName": "Rowan",
+      "lastName": "Pike",
+      "age": 22,
+      "nationality": "Germany",
+      "pace": 67,
+      "racecraft": 70,
+      "consistency": 92,
+      "wetWeatherSkill": 70,
+      "qualifyingSkill": 70,
+      "overtaking": 65,
+      "defending": 65,
+      "potential": 85,
+      "overallRating": 70,
+      "reputation": 10,
+      "salaryExpectation": 700,
+      "fitness": 95
+    },
+    {
+      "id": "pitwall.roster.driver-4",
+      "firstName": "Ellis",
+      "lastName": "North",
+      "age": 23,
+      "nationality": "Germany",
+      "pace": 68,
+      "racecraft": 70,
+      "consistency": 92,
+      "wetWeatherSkill": 70,
+      "qualifyingSkill": 70,
+      "overtaking": 65,
+      "defending": 65,
+      "potential": 85,
+      "overallRating": 70,
+      "reputation": 10,
+      "salaryExpectation": 700,
+      "fitness": 95
+    },
+    {
+      "id": "pitwall.roster.driver-5",
+      "firstName": "Sage",
+      "lastName": "Marsh",
+      "age": 24,
+      "nationality": "Germany",
+      "pace": 69,
+      "racecraft": 70,
+      "consistency": 92,
+      "wetWeatherSkill": 70,
+      "qualifyingSkill": 70,
+      "overtaking": 65,
+      "defending": 65,
+      "potential": 85,
+      "overallRating": 70,
+      "reputation": 10,
+      "salaryExpectation": 700,
+      "fitness": 95
+    },
+    {
+      "id": "pitwall.roster.driver-6",
+      "firstName": "Robin",
+      "lastName": "Cove",
+      "age": 25,
+      "nationality": "Germany",
+      "pace": 70,
+      "racecraft": 70,
+      "consistency": 92,
+      "wetWeatherSkill": 70,
+      "qualifyingSkill": 70,
+      "overtaking": 65,
+      "defending": 65,
+      "potential": 85,
+      "overallRating": 70,
+      "reputation": 10,
+      "salaryExpectation": 700,
+      "fitness": 95
+    },
+    {
+      "id": "pitwall.roster.driver-7",
+      "firstName": "Avery",
+      "lastName": "Ridge",
+      "age": 26,
+      "nationality": "Germany",
+      "pace": 71,
+      "racecraft": 70,
+      "consistency": 92,
+      "wetWeatherSkill": 70,
+      "qualifyingSkill": 70,
+      "overtaking": 65,
+      "defending": 65,
+      "potential": 85,
+      "overallRating": 70,
+      "reputation": 10,
+      "salaryExpectation": 700,
+      "fitness": 95
+    },
+    {
+      "id": "pitwall.roster.driver-8",
+      "firstName": "Remy",
+      "lastName": "Brook",
+      "age": 27,
+      "nationality": "Germany",
+      "pace": 72,
+      "racecraft": 70,
+      "consistency": 92,
+      "wetWeatherSkill": 70,
+      "qualifyingSkill": 70,
+      "overtaking": 65,
+      "defending": 65,
+      "potential": 85,
+      "overallRating": 70,
+      "reputation": 10,
+      "salaryExpectation": 700,
+      "fitness": 95
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pitwall2000:mod-api:1:liveries",
+  "title": "Pitwall 2000 liveries API 1",
+  "allOf": [
+    {
+      "type": "array",
+      "maxItems": 20000,
+      "items": {
+        "$ref": "#/$defs/ModLivery"
+      }
+    }
+  ],
+  "$defs": {
+    "ModLivery": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "vehicleId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "design": {
+          "$ref": "#/$defs/VehicleCustomizationState"
+        }
+      }
+    },
+    "VehicleCustomizationState": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "graphics": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/LiveryGraphic"
+          }
+        },
+        "decals": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/LiveryDecal"
+          }
+        },
+        "baseColor": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "secondaryColor": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "accentColor": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "pattern": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "number": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "sponsorDecalIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        }
+      }
+    },
+    "LiveryGraphic": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fontName": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "fontAsset": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "shape": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "text": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "color": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "sponsorId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "artworkPath": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "artworkVariant": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        },
+        "rotation": {
+          "type": "number"
+        }
+      }
+    },
+    "LiveryDecal": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sponsorId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "width": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

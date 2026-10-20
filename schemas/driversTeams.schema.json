@@ -1,0 +1,212 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pitwall2000:mod-api:1:driversTeams",
+  "title": "Pitwall 2000 driversTeams API 1",
+  "allOf": [
+    {
+      "$ref": "#/$defs/ModRoster"
+    }
+  ],
+  "$defs": {
+    "ModRoster": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "teams": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/TeamDefinition"
+          }
+        },
+        "drivers": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/DriverProfile"
+          }
+        }
+      }
+    },
+    "TeamDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "shortName": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "primaryColor": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "reputation": {
+          "type": "integer"
+        },
+        "startingBudget": {
+          "type": "number"
+        },
+        "driverIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        },
+        "vehicleDefinitionIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        }
+      }
+    },
+    "DriverProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "aggressiveness": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "firstName": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "lastName": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "age": {
+          "type": "integer"
+        },
+        "nationality": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "overallRating": {
+          "type": "integer"
+        },
+        "potential": {
+          "type": "integer"
+        },
+        "pace": {
+          "type": "integer"
+        },
+        "racecraft": {
+          "type": "integer"
+        },
+        "consistency": {
+          "type": "integer"
+        },
+        "wetWeatherSkill": {
+          "type": "integer"
+        },
+        "qualifyingSkill": {
+          "type": "integer"
+        },
+        "overtaking": {
+          "type": "integer"
+        },
+        "defending": {
+          "type": "integer"
+        },
+        "adaptability": {
+          "type": "integer"
+        },
+        "fitness": {
+          "type": "integer"
+        },
+        "morale": {
+          "type": "integer"
+        },
+        "reputation": {
+          "type": "integer"
+        },
+        "salaryExpectation": {
+          "type": "number"
+        },
+        "contractLengthMonths": {
+          "type": "integer"
+        },
+        "contractStatus": {
+          "type": "string",
+          "enum": [
+            "Unsigned",
+            "Offered",
+            "Active",
+            "Expiring",
+            "Expired",
+            "Terminated"
+          ]
+        },
+        "teamId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "careerStatistics": {
+          "$ref": "#/$defs/DriverCareerStatistics"
+        },
+        "experience": {
+          "type": "integer"
+        },
+        "developmentRate": {
+          "type": "number"
+        },
+        "eligibleSeriesIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        },
+        "activeSeriesId": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    },
+    "DriverCareerStatistics": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "starts": {
+          "type": "integer"
+        },
+        "wins": {
+          "type": "integer"
+        },
+        "podiums": {
+          "type": "integer"
+        },
+        "polePositions": {
+          "type": "integer"
+        },
+        "fastestLaps": {
+          "type": "integer"
+        },
+        "championships": {
+          "type": "integer"
+        },
+        "careerPoints": {
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

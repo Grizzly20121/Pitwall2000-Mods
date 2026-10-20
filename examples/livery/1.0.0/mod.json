@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "modApiVersion": 1,
+  "id": "pitwall.livery",
+  "name": "Harbor Sunrise livery",
+  "version": "1.0.0",
+  "author": "Pitwall 2000 Workshop",
+  "description": "Original, redistributable teaching example: Harbor Sunrise livery.",
+  "gameVersions": ">=0.4.4.0 <0.5.0.0",
+  "license": "CC0-1.0",
+  "categories": [
+    "liveries"
+  ],
+  "dependencies": [
+    {
+      "id": "pitwall.vehicle",
+      "version": "=1.0.0"
+    }
+  ],
+  "conflicts": [],
+  "replacements": [],
+  "requiredFeatures": [],
+  "content": {
+    "liveries": "liveries.json"
+  },
+  "preview": "preview.png"
+}

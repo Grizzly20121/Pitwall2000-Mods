@@ -1,0 +1,59 @@
+[
+  {
+    "id": "pitwall.season.harbor-club",
+    "name": "Harbor Club Championship",
+    "shortName": "Harbor Club",
+    "vehicleClass": "Formula",
+    "vehicleCategory": "Formula4",
+    "seriesKind": "Formula",
+    "branch": "Formula",
+    "tier": 1,
+    "prestige": 1,
+    "gridSize": 8,
+    "description": "Two club rounds. Repeat this calendar next season or enter an eligible built-in championship.",
+    "teamIds": [
+      "pitwall.roster.team-1",
+      "pitwall.roster.team-2",
+      "pitwall.roster.team-3",
+      "pitwall.roster.team-4"
+    ],
+    "driverPoolIds": [
+      "pitwall.roster.driver-1",
+      "pitwall.roster.driver-2",
+      "pitwall.roster.driver-3",
+      "pitwall.roster.driver-4",
+      "pitwall.roster.driver-5",
+      "pitwall.roster.driver-6",
+      "pitwall.roster.driver-7",
+      "pitwall.roster.driver-8"
+    ],
+    "pointsByPosition": [
+      12,
+      9,
+      7,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "calendar": [
+      {
+        "id": "pitwall.season.round-1",
+        "name": "Harbor Club Round 1",
+        "trackId": "pitwall.track.harbor",
+        "round": 1,
+        "dayOffset": 14,
+        "raceLaps": 5
+      },
+      {
+        "id": "pitwall.season.round-2",
+        "name": "Harbor Club Round 2",
+        "trackId": "pitwall.track.harbor",
+        "round": 2,
+        "dayOffset": 28,
+        "raceLaps": 5
+      }
+    ]
+  }
+]

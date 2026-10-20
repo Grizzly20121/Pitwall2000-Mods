@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "modApiVersion": 1,
+  "id": "pitwall.bundle",
+  "name": "Harbor Workshop Collection",
+  "version": "1.0.0",
+  "author": "Pitwall 2000 Workshop",
+  "description": "Original, redistributable teaching example: Harbor Workshop Collection.",
+  "gameVersions": ">=0.4.4.0 <0.5.0.0",
+  "license": "CC0-1.0",
+  "categories": [
+    "modpacks"
+  ],
+  "dependencies": [
+    {
+      "id": "pitwall.season",
+      "version": "=1.0.0"
+    }
+  ],
+  "conflicts": [],
+  "replacements": [],
+  "requiredFeatures": [],
+  "content": {},
+  "preview": "preview.png"
+}

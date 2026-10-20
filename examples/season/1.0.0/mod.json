@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "modApiVersion": 1,
+  "id": "pitwall.season",
+  "name": "Harbor Club Championship",
+  "version": "1.0.0",
+  "author": "Pitwall 2000 Workshop",
+  "description": "Original, redistributable teaching example: Harbor Club Championship.",
+  "gameVersions": ">=0.4.4.0 <0.5.0.0",
+  "license": "CC0-1.0",
+  "categories": [
+    "seasons"
+  ],
+  "dependencies": [
+    {
+      "id": "pitwall.track",
+      "version": "=1.0.0"
+    },
+    {
+      "id": "pitwall.vehicle",
+      "version": "=1.0.0"
+    },
+    {
+      "id": "pitwall.roster",
+      "version": "=1.0.0"
+    },
+    {
+      "id": "pitwall.livery",
+      "version": "=1.0.0"
+    }
+  ],
+  "conflicts": [],
+  "replacements": [],
+  "requiredFeatures": [],
+  "content": {
+    "seasons": "seasons.json"
+  },
+  "preview": "preview.png"
+}

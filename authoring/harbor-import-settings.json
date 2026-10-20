@@ -1,0 +1,30 @@
+{
+  "lap_direction": "clockwise",
+  "circuit_length_m": 1553.9822368615503,
+  "scale": {
+    "distance_m": 100,
+    "status": "original_design",
+    "source": "Original fictional circuit, one SVG unit per metre"
+  },
+  "smoothing": {
+    "sampling_interval_m": 3,
+    "fitting_tolerance_m": 0.03,
+    "max_displacement_m": 0.15,
+    "tangent_strength": 0.2,
+    "passes": 2,
+    "anchor_tolerance_m": 0.05
+  },
+  "pit": {
+    "join_tolerance_m": 0.25,
+    "minimum_stop_spacing_m": 8,
+    "speed_limit_kph": 60
+  },
+  "minimum_track_width_m": 18,
+  "maximum_track_width_m": 22,
+  "marker_tolerance_m": 1,
+  "length_tolerance_fraction": 0.01,
+  "driving_clearance_m": 0.7,
+  "protected_anchors": [],
+  "inactive_drs_zones": {},
+  "special_zones": {}
+}

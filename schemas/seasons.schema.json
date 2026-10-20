@@ -1,0 +1,280 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pitwall2000:mod-api:1:seasons",
+  "title": "Pitwall 2000 seasons API 1",
+  "allOf": [
+    {
+      "type": "array",
+      "maxItems": 20000,
+      "items": {
+        "$ref": "#/$defs/ChampionshipDefinition"
+      }
+    }
+  ],
+  "$defs": {
+    "ChampionshipDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "vehicleClass": {
+          "type": "string",
+          "enum": [
+            "Kart",
+            "Formula",
+            "GrandTouring",
+            "Prototype"
+          ]
+        },
+        "prestige": {
+          "type": "integer"
+        },
+        "gridSize": {
+          "type": "integer"
+        },
+        "requiredReputation": {
+          "type": "integer"
+        },
+        "minimumReputation": {
+          "type": "integer"
+        },
+        "entryFee": {
+          "type": "number"
+        },
+        "branch": {
+          "type": "string",
+          "enum": [
+            "Undecided",
+            "Formula",
+            "GrandTouring"
+          ]
+        },
+        "seriesKind": {
+          "type": "string",
+          "enum": [
+            "Kart",
+            "Formula",
+            "GrandTouring",
+            "Endurance",
+            "SpecialEvent"
+          ]
+        },
+        "vehicleCategory": {
+          "type": "string",
+          "enum": [
+            "EntryKart",
+            "ShifterKart",
+            "Formula4",
+            "Formula3",
+            "Formula2",
+            "FormulaUno",
+            "JuniorGt",
+            "Gt4",
+            "Gt3",
+            "Lmp2",
+            "Hypercar"
+          ]
+        },
+        "allowedVehicleCategories": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "enum": [
+              "EntryKart",
+              "ShifterKart",
+              "Formula4",
+              "Formula3",
+              "Formula2",
+              "FormulaUno",
+              "JuniorGt",
+              "Gt4",
+              "Gt3",
+              "Lmp2",
+              "Hypercar"
+            ]
+          }
+        },
+        "requireUniqueVenues": {
+          "type": "boolean"
+        },
+        "officeType": {
+          "type": "string",
+          "enum": [
+            "Starter",
+            "Professional",
+            "Factory"
+          ]
+        },
+        "tier": {
+          "type": "integer"
+        },
+        "shortName": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "logoPath": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "presentationVehicleId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "isSpecialEvent": {
+          "type": "boolean"
+        },
+        "safetyCarAllowed": {
+          "type": "boolean"
+        },
+        "kartNeutralisationRule": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "staffLimit": {
+          "type": "integer"
+        },
+        "requiredTeamLevel": {
+          "type": "integer"
+        },
+        "requiredWorkshopLevel": {
+          "type": "integer"
+        },
+        "requiredHospitalityLevel": {
+          "type": "integer"
+        },
+        "operatingCostPerEvent": {
+          "type": "number"
+        },
+        "expectedTeamValue": {
+          "type": "number"
+        },
+        "sponsorQualityMin": {
+          "type": "integer"
+        },
+        "sponsorQualityMax": {
+          "type": "integer"
+        },
+        "raceFormat": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "practiceFormat": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "qualifyingFormat": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "prerequisiteChampionshipId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "prerequisiteChampionshipIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        },
+        "progressionLinks": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        },
+        "driverPoolIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        },
+        "pointsByPosition": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "integer"
+          }
+        },
+        "calendar": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "$ref": "#/$defs/CalendarEventDefinition"
+          }
+        },
+        "teamIds": {
+          "type": "array",
+          "maxItems": 20000,
+          "items": {
+            "type": "string",
+            "maxLength": 16384
+          }
+        }
+      }
+    },
+    "CalendarEventDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "trackId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "round": {
+          "type": "integer"
+        },
+        "dayOffset": {
+          "type": "integer"
+        },
+        "raceLaps": {
+          "type": "integer"
+        },
+        "raceDurationSeconds": {
+          "type": "number"
+        },
+        "hasPractice": {
+          "type": "boolean"
+        },
+        "hasQualifying": {
+          "type": "boolean"
+        },
+        "raceCount": {
+          "type": "integer"
+        },
+        "isSpecialEvent": {
+          "type": "boolean"
+        },
+        "eventImage": {
+          "type": "string",
+          "maxLength": 16384
+        }
+      }
+    }
+  }
+}

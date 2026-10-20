@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pitwall2000:mod-api:1:vehicles",
+  "title": "Pitwall 2000 vehicles API 1",
+  "allOf": [
+    {
+      "type": "array",
+      "maxItems": 20000,
+      "items": {
+        "$ref": "#/$defs/VehicleDefinition"
+      }
+    }
+  ],
+  "$defs": {
+    "VehicleDefinition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hasErs": {
+          "type": "boolean"
+        },
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "vehicleClass": {
+          "type": "string",
+          "enum": [
+            "Kart",
+            "Formula",
+            "GrandTouring",
+            "Prototype"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "enum": [
+            "EntryKart",
+            "ShifterKart",
+            "Formula4",
+            "Formula3",
+            "Formula2",
+            "FormulaUno",
+            "JuniorGt",
+            "Gt4",
+            "Gt3",
+            "Lmp2",
+            "Hypercar"
+          ]
+        },
+        "visualPath": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "aeroUpgradeVisualPath": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "tier": {
+          "type": "integer"
+        },
+        "performance": {
+          "type": "integer"
+        },
+        "reliability": {
+          "type": "integer"
+        },
+        "engine": {
+          "type": "integer"
+        },
+        "brakes": {
+          "type": "integer"
+        },
+        "chassis": {
+          "type": "integer"
+        },
+        "suspension": {
+          "type": "integer"
+        },
+        "aerodynamics": {
+          "type": "integer"
+        },
+        "weightKg": {
+          "type": "number"
+        },
+        "tyreUsage": {
+          "type": "number"
+        },
+        "fuelUsage": {
+          "type": "number"
+        },
+        "purchasePrice": {
+          "type": "number"
+        },
+        "baseResaleValue": {
+          "type": "number"
+        },
+        "runningCostPerEvent": {
+          "type": "number"
+        }
+      }
+    }
+  }
+}

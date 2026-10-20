@@ -1,0 +1,15 @@
+[
+  {
+    "definition": {
+      "id": "pitwall.track.harbor",
+      "name": "Harbor Practice \u2014 Club",
+      "country": "Fictional",
+      "region": "Workshop",
+      "lengthMeters": 1553.8594570591904,
+      "defaultLapCount": 5,
+      "pitSpeedLimitKph": 60
+    },
+    "runtime": "runtime.json",
+    "geometry": "geometry.json"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "modApiVersion": 1,
+  "id": "pitwall.track",
+  "name": "Harbor Practice Circuit",
+  "version": "1.0.0",
+  "author": "Pitwall 2000 Workshop",
+  "description": "Original, redistributable teaching example: Harbor Practice Circuit.",
+  "gameVersions": ">=0.4.4.0 <0.5.0.0",
+  "license": "CC0-1.0",
+  "categories": [
+    "tracks"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "replacements": [],
+  "requiredFeatures": [],
+  "content": {
+    "tracks": "tracks.json"
+  },
+  "preview": "preview.png"
+}

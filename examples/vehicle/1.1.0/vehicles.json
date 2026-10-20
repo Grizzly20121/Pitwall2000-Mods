@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pitwall.vehicle.kestrel-r4",
+    "name": "Kestrel R4",
+    "vehicleClass": "Formula",
+    "category": "Formula4",
+    "tier": 1,
+    "performance": 78,
+    "reliability": 94,
+    "engine": 74,
+    "brakes": 76,
+    "chassis": 73,
+    "suspension": 71,
+    "aerodynamics": 64,
+    "weightKg": 570,
+    "tyreUsage": 0.85,
+    "fuelUsage": 0.9,
+    "purchasePrice": 25000,
+    "baseResaleValue": 12000,
+    "runningCostPerEvent": 900,
+    "hasErs": false
+  }
+]

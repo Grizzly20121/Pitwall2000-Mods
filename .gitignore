@@ -1,0 +1,4 @@
+packages/
+catalog.pending.json
+*.tmp
+__pycache__/
