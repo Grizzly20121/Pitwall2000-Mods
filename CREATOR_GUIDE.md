@@ -121,6 +121,10 @@ teams, driver pools, points, career requirements, rules and calendar. There must
 consecutively numbered rounds, unique round IDs, valid track/layout references, ascending day
 offsets within 0–350, laps 1–500 or duration up to 86400 seconds, and an even grid of 4–44.
 Points are nonnegative integers up to 1000. References resolve against built-in plus selected content.
+Each round has 1–4 races. Prestige is 1–100, reputation 0–100, tier 1–20,
+staff limit 1–100, facility requirements 0–100 and sponsor quality 0–10
+(maximum cannot be below minimum). Entry fee, operating cost and expected team value
+are 0–1 billion. Both singular and plural prerequisite fields must resolve.
 Custom career calendars take precedence over the ordinary 5/10/15-round preference.
 After the last event, the existing season progression can repeat the authored calendar; eligible
 built-in or explicitly referenced progression links remain available. Existing saves never migrate
@@ -142,6 +146,27 @@ ZIP64 and multi-volume archives are unsupported. Limits: 64 MiB compressed; 128 
 PNG 2048×2048 maximum; SVG 2 MiB/10000 elements. Track road/pit ≤20000 points, 2–22 boxes;
 visuals ≤2000 shapes/50000 total points/500 labels. Packages contain ≤1000 definitions.
 Package assets cannot resolve arbitrary files or network references.
+
+Additional runtime numeric checks apply to the generated structural schemas:
+
+- Vehicle name: 1–100 characters; purchase/resale/running cost: 0–100 million.
+  Category and vehicle class must be an existing supported pair.
+- Team name: 1–100 characters; short name: 1–40. Driver contract length: 0–120 months;
+  historical statistics: 0–10 million. Nonempty team and active-series references must resolve.
+- Track name: 1–100 characters; width: 0–200 m (zero delegates to runtime geometry);
+  grid row spacing: 5–50 m, front offset: 0–100 m, stagger: 0–30 m.
+  Speed multiplier: 0.1–5; acceleration, lateral acceleration and braking: greater than
+  zero through 100 m/s²; corners: 0–500; overtaking difficulty: 0–1;
+  attack multiplier: 0.1–5; passing lookahead: greater than zero through 20 seconds;
+  passing clearance: 0–20 m; wall offset: −1–100 m.
+- Track tyre/fuel factors: 0.1–5; wetness: 0–1; grip: 0.1–3; pit loss: 0–300 seconds.
+  Speed-profile samples: 0–150 m/s; speed-zone fractions: [0,1), multiplier: (0,5].
+  Runtime ideal offsets: ±100 m, clearance: 0–20 m, merge hold: [0,1].
+  Optional kerb arrays are empty or match the road sample count, with widths 0–20 m.
+
+Use the exported game's `--validate-mod` command for these semantic checks.
+The Python packager checks structural schemas and file safety; it cannot prove a complete
+resolved career or race without the game's catalog.
 
 The catalog uses HTTPS GitHub URLs, expected sizes and SHA-256. SHA-256 verifies catalog integrity,
 not author trust. The game follows at most five redirects only to the supported GitHub/raw/asset
