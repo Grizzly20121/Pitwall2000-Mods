@@ -102,6 +102,13 @@
         "requiredFeatures": {
           "type": "array",
           "maxItems": 0
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "maxLength": 16384
+          }
         }
       },
       "required": [

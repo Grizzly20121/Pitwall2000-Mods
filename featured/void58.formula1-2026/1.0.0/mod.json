@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "modApiVersion": 1,
+  "id": "void58.formula1-2026",
+  "name": "Realistic Formula 1 Season",
+  "version": "1.0.0",
+  "author": "void_58",
+  "description": "2026 championship snapshot through 25 October 2026. Official full names, teams and source standings; championship-informed game performance estimates. Fictional author identity void_58.",
+  "gameVersions": "\u003E=0.4.5.0 \u003C0.5.0.0",
+  "license": "CC0-1.0 (original geometric design and configuration only)",
+  "categories": [
+    "seasons",
+    "vehicles",
+    "driversTeams"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "replacements": [],
+  "content": {
+    "seasons": "seasons.json",
+    "vehicles": "vehicles.json",
+    "driversTeams": "roster.json"
+  },
+  "requiredFeatures": [],
+  "metadata": {
+    "representedSeason": "2026",
+    "dataCutoff": "2026-10-25",
+    "verifiedDate": "2026-10-28",
+    "sources": "https://www.formula1.com/en/results/2026/drivers\nhttps://www.formula1.com/en/results/2026/team\nhttps://www.fia.com/events/fia-formula-one-world-championship/season-2026/2026-classifications\nhttps://www.formula1.com/en/racing/2026",
+    "driverStandings": "1. Andrea Kimi Antonelli: 365\n2. George Russell: 242\n3. Lewis Hamilton: 241\n4. Max Verstappen: 236\n5. Charles Leclerc: 233\n6. Lando Norris: 211\n7. Oscar Piastri: 144\n8. Isack Hadjar: 105\n9. Liam Lawson: 77\n10. Pierre Gasly: 42\n11. Arvid Lindblad: 38\n12. Franco Colapinto: 27\n13. Oliver Bearman: 23\n14. Nico H\u00FClkenberg: 13\n15. Gabriel Bortoleto: 10\n16. Esteban Ocon: 7\n17. Fernando Alonso: 7\n18. Carlos Sainz: 7\n19. Alexander Albon: 5\n20. Yuki Tsunoda: 1\n21. Lance Stroll: 0\n22. Valtteri Bottas: 0\n23. Sergio P\u00E9rez: 0",
+    "teamStandings": "1. Mercedes: 607\n2. Ferrari: 474\n3. Red Bull Racing: 355\n4. McLaren: 355\n5. Racing Bulls: 102\n6. Alpine: 69\n7. Haas F1 Team: 30\n8. Audi: 23\n9. Williams: 12\n10. Aston Martin: 7\n11. Cadillac: 0",
+    "ratingMethod": "Game estimates: driver = round(55 \u002B 42*sqrt(points/365)); car = round(60 \u002B 35*sqrt(teamPoints/607)). Qualifying/consistency share that estimate; reliability 85, wet skill 70, age 25 and salaries are game defaults, not real statistics.",
+    "calendarOmissions": "Barcelona no-chicane GP (2026-06-14): exact current layout unavailable",
+    "notes": "Official points through the United States GP on 25 October. Yuki Tsunoda is retained in the recruitment pool; the current Racing Bulls starting pair is Lawson/Lindblad. Andrea Kimi Antonelli uses the full FIA name. Race/qualifying/consistency/car ratings are transparent game estimates based on points, not official measurements. Ages, salaries and reliability use game defaults. The mod starts a new championship at zero points and retains the real source standings as reference metadata. Calendar dates are mapped relative to the new career season; omitted unsupported venues are listed explicitly.",
+    "authorIdentity": "void_58 is a fictional author identity created for this release.",
+    "packageFormat": "creator-v1"
+  }
+}

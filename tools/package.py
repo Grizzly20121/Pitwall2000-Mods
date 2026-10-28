@@ -91,9 +91,10 @@ def package(folder,destination):
     folder=folder.resolve()
     m,files=validate(folder);destination.parent.mkdir(parents=True,exist_ok=True)
     require(not destination.exists(),"Destination exists; retain immutable package bytes")
+    creator=m.get('metadata',{}).get('packageFormat')=='creator-v1'
     with zipfile.ZipFile(destination,"w",compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for p in files:
-            info=zipfile.ZipInfo(p.relative_to(folder).as_posix(),(2026,10,20,0,0,0));info.create_system=0;info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
+            info=zipfile.ZipInfo(p.relative_to(folder).as_posix(),(2026,10,28,0,0,0) if creator else (2026,10,20,0,0,0));info.create_system=0;info.compress_type=zipfile.ZIP_STORED if creator else zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
             z.writestr(info,p.read_bytes())
     require(destination.stat().st_size<=64*1024*1024,"Archive exceeds 64 MiB")
     with zipfile.ZipFile(destination) as z:

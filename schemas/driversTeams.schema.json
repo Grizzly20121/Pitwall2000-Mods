@@ -32,6 +32,9 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "authoredIdentity": {
+          "type": "boolean"
+        },
         "id": {
           "type": "string",
           "maxLength": 16384
@@ -76,6 +79,9 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "authoredIdentity": {
+          "type": "boolean"
+        },
         "aggressiveness": {
           "type": "integer"
         },

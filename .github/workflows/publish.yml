@@ -5,7 +5,7 @@ on:
       tag:
         description: Immutable release tag for reviewed source
         required: true
-        default: examples-v1
+        default: featured-v0450
 permissions:
   contents: write
 concurrency: workshop-publish
@@ -20,7 +20,7 @@ jobs:
           ref: main
           persist-credentials: true
       - name: Validate reviewed source
-        run: python tools/package.py examples --all
+        run: python tools/package.py featured --all
       - name: Publish and verify anonymous download bytes
         env:
           GH_TOKEN: ${{ github.token }}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "modApiVersion": 1,
+  "id": "void58.rosso-heritage",
+  "name": "Rosso Heritage",
+  "version": "1.0.0",
+  "author": "void_58",
+  "description": "Classic red and white Formula composition. 28 individually editable native shapes; no text, logos or sponsors.",
+  "gameVersions": "\u003E=0.4.5.0 \u003C0.5.0.0",
+  "license": "CC0-1.0 (original geometric design and configuration only)",
+  "categories": [
+    "liveries"
+  ],
+  "dependencies": [],
+  "conflicts": [],
+  "replacements": [],
+  "content": {
+    "liveries": "liveries.json"
+  },
+  "requiredFeatures": [],
+  "metadata": {
+    "inspiration": "Classic red and white Formula composition; original geometric reinterpretation without protected wordmarks.",
+    "packageFormat": "creator-v1"
+  }
+}

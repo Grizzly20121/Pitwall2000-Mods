@@ -20,4 +20,6 @@ jobs:
           path: incoming
           persist-credentials: false
       - name: Validate data with trusted base validator
-        run: python validator/tools/package.py incoming/examples --all
+        run: |
+          python validator/tools/package.py incoming/examples --all
+          if [ -d incoming/featured ]; then python validator/tools/package.py incoming/featured --all; fi

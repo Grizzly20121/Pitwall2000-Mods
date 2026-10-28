@@ -48,6 +48,15 @@
         "previewUrl": {
           "type": "string",
           "maxLength": 16384
+        },
+        "createdUtc": {
+          "type": "string"
+        },
+        "updatedUtc": {
+          "type": "string"
+        },
+        "ratingIssue": {
+          "type": "integer"
         }
       }
     },
@@ -145,6 +154,13 @@
         "requiredFeatures": {
           "type": "array",
           "maxItems": 0
+        },
+        "metadata": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "maxLength": 16384
+          }
         }
       },
       "required": [

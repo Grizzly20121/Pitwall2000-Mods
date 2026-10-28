@@ -1,263 +1,236 @@
 {
   "schemaVersion": 1,
-  "publishedUtc": "2026-10-20T15:35:15.027810+00:00",
+  "publishedUtc": "2026-10-28T06:32:48.034913+00:00",
   "packages": [
     {
       "manifest": {
         "schemaVersion": 1,
         "modApiVersion": 1,
-        "id": "pitwall.bundle",
-        "name": "Harbor Workshop Collection",
+        "id": "void58.azure-stripes",
+        "name": "Azure Racing Stripes",
         "version": "1.0.0",
-        "author": "Pitwall 2000 Workshop",
-        "description": "Original, redistributable teaching example: Harbor Workshop Collection.",
-        "gameVersions": ">=0.4.4.0 <0.5.0.0",
-        "license": "CC0-1.0",
-        "categories": [
-          "modpacks"
-        ],
-        "dependencies": [
-          {
-            "id": "pitwall.season",
-            "version": "=1.0.0"
-          }
-        ],
-        "conflicts": [],
-        "replacements": [],
-        "requiredFeatures": [],
-        "content": {},
-        "preview": "preview.png"
-      },
-      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.bundle-1.0.0.zip",
-      "size": 1102,
-      "sha256": "660e4f89fc50c390441ebf686a85ace53173932ecad7a596625fcde53449562d",
-      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/bundle/1.0.0/preview.png"
-    },
-    {
-      "manifest": {
-        "schemaVersion": 1,
-        "modApiVersion": 1,
-        "id": "pitwall.livery",
-        "name": "Harbor Sunrise livery",
-        "version": "1.0.0",
-        "author": "Pitwall 2000 Workshop",
-        "description": "Original, redistributable teaching example: Harbor Sunrise livery.",
-        "gameVersions": ">=0.4.4.0 <0.5.0.0",
-        "license": "CC0-1.0",
+        "author": "void_58",
+        "description": "White body with layered navy, cyan and coral racing stripes. 28 individually editable native shapes; no text, logos or sponsors.",
+        "gameVersions": ">=0.4.5.0 <0.5.0.0",
+        "license": "CC0-1.0 (original geometric design and configuration only)",
         "categories": [
           "liveries"
         ],
-        "dependencies": [
-          {
-            "id": "pitwall.vehicle",
-            "version": "=1.0.0"
-          }
-        ],
-        "conflicts": [],
-        "replacements": [],
-        "requiredFeatures": [],
-        "content": {
-          "liveries": "liveries.json"
-        },
-        "preview": "preview.png"
-      },
-      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.livery-1.0.0.zip",
-      "size": 1469,
-      "sha256": "3f4ff205d6d2b27640bb58981c80b99de0545c085e3408ae6fc5d7e816da5423",
-      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/livery/1.0.0/preview.png"
-    },
-    {
-      "manifest": {
-        "schemaVersion": 1,
-        "modApiVersion": 1,
-        "id": "pitwall.mixed",
-        "name": "Tern car and paint",
-        "version": "1.0.0",
-        "author": "Pitwall 2000 Workshop",
-        "description": "Original, redistributable teaching example: Tern car and paint.",
-        "gameVersions": ">=0.4.4.0 <0.5.0.0",
-        "license": "CC0-1.0",
-        "categories": [
-          "vehicles",
-          "liveries",
-          "modpacks"
-        ],
         "dependencies": [],
         "conflicts": [],
         "replacements": [],
-        "requiredFeatures": [],
         "content": {
-          "vehicles": "vehicles.json",
           "liveries": "liveries.json"
         },
-        "preview": "preview.png"
+        "requiredFeatures": [],
+        "metadata": {
+          "inspiration": "White body with layered navy, cyan and coral racing stripes; original geometric reinterpretation without protected wordmarks.",
+          "packageFormat": "creator-v1"
+        }
       },
-      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.mixed-1.0.0.zip",
-      "size": 1805,
-      "sha256": "d9c6f345b97eaa18dbeb96ed93fdd42186a07c601d44a37928fa5ae0744fa30e",
-      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/mixed/1.0.0/preview.png"
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/featured-v0450/void58.azure-stripes-1.0.0.zip",
+      "size": 12828,
+      "sha256": "02cd4d1705d98a3db1460c4033993e59a41126352a6631a1e0d284ee65e08b9f",
+      "ratingIssue": 1
     },
     {
       "manifest": {
         "schemaVersion": 1,
         "modApiVersion": 1,
-        "id": "pitwall.roster",
-        "name": "Harbor club teams and drivers",
+        "id": "void58.formula1-2026",
+        "name": "Realistic Formula 1 Season",
         "version": "1.0.0",
-        "author": "Pitwall 2000 Workshop",
-        "description": "Original, redistributable teaching example: Harbor club teams and drivers.",
-        "gameVersions": ">=0.4.4.0 <0.5.0.0",
-        "license": "CC0-1.0",
+        "author": "void_58",
+        "description": "2026 championship snapshot through 25 October 2026. Official full names, teams and source standings; championship-informed game performance estimates. Fictional author identity void_58.",
+        "gameVersions": ">=0.4.5.0 <0.5.0.0",
+        "license": "CC0-1.0 (original geometric design and configuration only)",
         "categories": [
+          "seasons",
+          "vehicles",
           "driversTeams"
         ],
-        "dependencies": [
-          {
-            "id": "pitwall.vehicle",
-            "version": "=1.0.0"
-          }
-        ],
+        "dependencies": [],
         "conflicts": [],
         "replacements": [],
-        "requiredFeatures": [],
         "content": {
+          "seasons": "seasons.json",
+          "vehicles": "vehicles.json",
           "driversTeams": "roster.json"
         },
-        "preview": "preview.png"
-      },
-      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.roster-1.0.0.zip",
-      "size": 1853,
-      "sha256": "3f3fbb401fefe2d92748f07aa4807b7e5c1023a86a74f2ad5455e2eaa0227748",
-      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/roster/1.0.0/preview.png"
-    },
-    {
-      "manifest": {
-        "schemaVersion": 1,
-        "modApiVersion": 1,
-        "id": "pitwall.season",
-        "name": "Harbor Club Championship",
-        "version": "1.0.0",
-        "author": "Pitwall 2000 Workshop",
-        "description": "Original, redistributable teaching example: Harbor Club Championship.",
-        "gameVersions": ">=0.4.4.0 <0.5.0.0",
-        "license": "CC0-1.0",
-        "categories": [
-          "seasons"
-        ],
-        "dependencies": [
-          {
-            "id": "pitwall.track",
-            "version": "=1.0.0"
-          },
-          {
-            "id": "pitwall.vehicle",
-            "version": "=1.0.0"
-          },
-          {
-            "id": "pitwall.roster",
-            "version": "=1.0.0"
-          },
-          {
-            "id": "pitwall.livery",
-            "version": "=1.0.0"
-          }
-        ],
-        "conflicts": [],
-        "replacements": [],
         "requiredFeatures": [],
-        "content": {
-          "seasons": "seasons.json"
-        },
-        "preview": "preview.png"
+        "metadata": {
+          "representedSeason": "2026",
+          "dataCutoff": "2026-10-25",
+          "verifiedDate": "2026-10-28",
+          "sources": "https://www.formula1.com/en/results/2026/drivers\nhttps://www.formula1.com/en/results/2026/team\nhttps://www.fia.com/events/fia-formula-one-world-championship/season-2026/2026-classifications\nhttps://www.formula1.com/en/racing/2026",
+          "driverStandings": "1. Andrea Kimi Antonelli: 365\n2. George Russell: 242\n3. Lewis Hamilton: 241\n4. Max Verstappen: 236\n5. Charles Leclerc: 233\n6. Lando Norris: 211\n7. Oscar Piastri: 144\n8. Isack Hadjar: 105\n9. Liam Lawson: 77\n10. Pierre Gasly: 42\n11. Arvid Lindblad: 38\n12. Franco Colapinto: 27\n13. Oliver Bearman: 23\n14. Nico H\u00fclkenberg: 13\n15. Gabriel Bortoleto: 10\n16. Esteban Ocon: 7\n17. Fernando Alonso: 7\n18. Carlos Sainz: 7\n19. Alexander Albon: 5\n20. Yuki Tsunoda: 1\n21. Lance Stroll: 0\n22. Valtteri Bottas: 0\n23. Sergio P\u00e9rez: 0",
+          "teamStandings": "1. Mercedes: 607\n2. Ferrari: 474\n3. Red Bull Racing: 355\n4. McLaren: 355\n5. Racing Bulls: 102\n6. Alpine: 69\n7. Haas F1 Team: 30\n8. Audi: 23\n9. Williams: 12\n10. Aston Martin: 7\n11. Cadillac: 0",
+          "ratingMethod": "Game estimates: driver = round(55 + 42*sqrt(points/365)); car = round(60 + 35*sqrt(teamPoints/607)). Qualifying/consistency share that estimate; reliability 85, wet skill 70, age 25 and salaries are game defaults, not real statistics.",
+          "calendarOmissions": "Barcelona no-chicane GP (2026-06-14): exact current layout unavailable",
+          "notes": "Official points through the United States GP on 25 October. Yuki Tsunoda is retained in the recruitment pool; the current Racing Bulls starting pair is Lawson/Lindblad. Andrea Kimi Antonelli uses the full FIA name. Race/qualifying/consistency/car ratings are transparent game estimates based on points, not official measurements. Ages, salaries and reliability use game defaults. The mod starts a new championship at zero points and retains the real source standings as reference metadata. Calendar dates are mapped relative to the new career season; omitted unsupported venues are listed explicitly.",
+          "authorIdentity": "void_58 is a fictional author identity created for this release.",
+          "packageFormat": "creator-v1"
+        }
       },
-      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.season-1.0.0.zip",
-      "size": 1683,
-      "sha256": "f0c95ae57d75e086fa3b37bfc245ddd25c2bd4b73b491aa1c5490859b91ed84d",
-      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/season/1.0.0/preview.png"
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/featured-v0450/void58.formula1-2026-1.0.0.zip",
+      "size": 51053,
+      "sha256": "95a79819cef225604a567925725322c064ae689c01ba04711809933d3a1d11b3",
+      "ratingIssue": 2
     },
     {
       "manifest": {
         "schemaVersion": 1,
         "modApiVersion": 1,
-        "id": "pitwall.track",
-        "name": "Harbor Practice Circuit",
+        "id": "void58.lime-apex",
+        "name": "Lime Apex",
         "version": "1.0.0",
-        "author": "Pitwall 2000 Workshop",
-        "description": "Original, redistributable teaching example: Harbor Practice Circuit.",
-        "gameVersions": ">=0.4.4.0 <0.5.0.0",
-        "license": "CC0-1.0",
+        "author": "void_58",
+        "description": "Green and yellow GT endurance composition. 28 individually editable native shapes; no text, logos or sponsors.",
+        "gameVersions": ">=0.4.5.0 <0.5.0.0",
+        "license": "CC0-1.0 (original geometric design and configuration only)",
         "categories": [
-          "tracks"
+          "liveries"
         ],
         "dependencies": [],
         "conflicts": [],
         "replacements": [],
-        "requiredFeatures": [],
         "content": {
-          "tracks": "tracks.json"
+          "liveries": "liveries.json"
         },
-        "preview": "preview.png"
+        "requiredFeatures": [],
+        "metadata": {
+          "inspiration": "Green and yellow GT endurance composition; original geometric reinterpretation without protected wordmarks.",
+          "packageFormat": "creator-v1"
+        }
       },
-      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.track-1.0.0.zip",
-      "size": 42883,
-      "sha256": "53a62b89e9a28a5858306946ac61c38566b2daf648fcc0be54677fdeacb0057b",
-      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/track/1.0.0/preview.png"
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/featured-v0450/void58.lime-apex-1.0.0.zip",
+      "size": 12663,
+      "sha256": "2a8e0620db1608a30d21b772c34ef746ec4816b32dc99e631f0c4a27324e5377",
+      "ratingIssue": 3
     },
     {
       "manifest": {
         "schemaVersion": 1,
         "modApiVersion": 1,
-        "id": "pitwall.vehicle",
-        "name": "Kestrel R4",
+        "id": "void58.pink-cuts",
+        "name": "Pink Cuts",
         "version": "1.0.0",
-        "author": "Pitwall 2000 Workshop",
-        "description": "Original, redistributable teaching example: Kestrel R4.",
-        "gameVersions": ">=0.4.4.0 <0.5.0.0",
-        "license": "CC0-1.0",
+        "author": "void_58",
+        "description": "Salmon endurance body with geometric dashed cutting paths. 28 individually editable native shapes; no text, logos or sponsors.",
+        "gameVersions": ">=0.4.5.0 <0.5.0.0",
+        "license": "CC0-1.0 (original geometric design and configuration only)",
         "categories": [
-          "vehicles"
+          "liveries"
         ],
         "dependencies": [],
         "conflicts": [],
         "replacements": [],
-        "requiredFeatures": [],
         "content": {
-          "vehicles": "vehicles.json"
+          "liveries": "liveries.json"
         },
-        "preview": "preview.png"
+        "requiredFeatures": [],
+        "metadata": {
+          "inspiration": "Salmon endurance body with geometric dashed cutting paths; original geometric reinterpretation without protected wordmarks.",
+          "packageFormat": "creator-v1"
+        }
       },
-      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.vehicle-1.0.0.zip",
-      "size": 1461,
-      "sha256": "ce88076a0798f67296970f8814a6dea740c1e8d6fdafb7eb6e7dea82223b616f",
-      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/vehicle/1.0.0/preview.png"
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/featured-v0450/void58.pink-cuts-1.0.0.zip",
+      "size": 13095,
+      "sha256": "4987528cc5cee023522d2026d803adbb51bef9bb1df022bcb5a01f81b7e2ffe6",
+      "ratingIssue": 4
     },
     {
       "manifest": {
         "schemaVersion": 1,
         "modApiVersion": 1,
-        "id": "pitwall.vehicle",
-        "name": "Kestrel R4",
-        "version": "1.1.0",
-        "author": "Pitwall 2000 Workshop",
-        "description": "Original, redistributable teaching example: Kestrel R4.",
-        "gameVersions": ">=0.4.4.0 <0.5.0.0",
-        "license": "CC0-1.0",
+        "id": "void58.reptile-green",
+        "name": "Reptile Green",
+        "version": "1.0.0",
+        "author": "void_58",
+        "description": "Green reptile eyes, scales and geometric teeth. 28 individually editable native shapes; no text, logos or sponsors.",
+        "gameVersions": ">=0.4.5.0 <0.5.0.0",
+        "license": "CC0-1.0 (original geometric design and configuration only)",
         "categories": [
-          "vehicles"
+          "liveries"
         ],
         "dependencies": [],
         "conflicts": [],
         "replacements": [],
-        "requiredFeatures": [],
         "content": {
-          "vehicles": "vehicles.json"
+          "liveries": "liveries.json"
         },
-        "preview": "preview.png"
+        "requiredFeatures": [],
+        "metadata": {
+          "inspiration": "Green reptile eyes, scales and geometric teeth; original geometric reinterpretation without protected wordmarks.",
+          "packageFormat": "creator-v1"
+        }
       },
-      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/examples-v1/pitwall.vehicle-1.1.0.zip",
-      "size": 1462,
-      "sha256": "c792497cac954f8e9886e007ec254e91347f7700c472d13d84505bd53d8158b4",
-      "previewUrl": "https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/examples/vehicle/1.1.0/preview.png"
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/featured-v0450/void58.reptile-green-1.0.0.zip",
+      "size": 12695,
+      "sha256": "b51d9d4d9da947977fbcf5008398b7e6498d378ab516becb3cf0b49e2891a97a",
+      "ratingIssue": 5
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "void58.rosso-heritage",
+        "name": "Rosso Heritage",
+        "version": "1.0.0",
+        "author": "void_58",
+        "description": "Classic red and white Formula composition. 28 individually editable native shapes; no text, logos or sponsors.",
+        "gameVersions": ">=0.4.5.0 <0.5.0.0",
+        "license": "CC0-1.0 (original geometric design and configuration only)",
+        "categories": [
+          "liveries"
+        ],
+        "dependencies": [],
+        "conflicts": [],
+        "replacements": [],
+        "content": {
+          "liveries": "liveries.json"
+        },
+        "requiredFeatures": [],
+        "metadata": {
+          "inspiration": "Classic red and white Formula composition; original geometric reinterpretation without protected wordmarks.",
+          "packageFormat": "creator-v1"
+        }
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/featured-v0450/void58.rosso-heritage-1.0.0.zip",
+      "size": 12632,
+      "sha256": "8e685177f0a3e3873f9c52604d65e8076b234b3355747a966494460a84977de5",
+      "ratingIssue": 6
+    },
+    {
+      "manifest": {
+        "schemaVersion": 1,
+        "modApiVersion": 1,
+        "id": "void58.rotary-sunset",
+        "name": "Rotary Sunset",
+        "version": "1.0.0",
+        "author": "void_58",
+        "description": "Orange and green endurance diamonds. 28 individually editable native shapes; no text, logos or sponsors.",
+        "gameVersions": ">=0.4.5.0 <0.5.0.0",
+        "license": "CC0-1.0 (original geometric design and configuration only)",
+        "categories": [
+          "liveries"
+        ],
+        "dependencies": [],
+        "conflicts": [],
+        "replacements": [],
+        "content": {
+          "liveries": "liveries.json"
+        },
+        "requiredFeatures": [],
+        "metadata": {
+          "inspiration": "Orange and green endurance diamonds; original geometric reinterpretation without protected wordmarks.",
+          "packageFormat": "creator-v1"
+        }
+      },
+      "url": "https://github.com/Grizzly20121/Pitwall2000-Mods/releases/download/featured-v0450/void58.rotary-sunset-1.0.0.zip",
+      "size": 12674,
+      "sha256": "920696792ffe86295b5c3f8bffd58f87ca2fd80e8d31e6ce4d61578802eb3eec",
+      "ratingIssue": 7
     }
   ]
 }

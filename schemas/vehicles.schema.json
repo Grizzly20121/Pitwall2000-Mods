@@ -16,6 +16,12 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "authoredIdentity": {
+          "type": "boolean"
+        },
+        "customCar": {
+          "$ref": "#/$defs/CustomCarSpecification"
+        },
         "hasErs": {
           "type": "boolean"
         },
@@ -100,6 +106,60 @@
           "type": "number"
         },
         "runningCostPerEvent": {
+          "type": "number"
+        }
+      }
+    },
+    "CustomCarSpecification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sprite": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "packageId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "packageVersion": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "widthMeters": {
+          "type": "number"
+        },
+        "weightKg": {
+          "type": "number"
+        },
+        "lengthMeters": {
+          "type": "number"
+        },
+        "spriteScale": {
+          "type": "number"
+        },
+        "maximumSpeedKph": {
+          "type": "number"
+        },
+        "acceleration": {
+          "type": "number"
+        },
+        "braking": {
+          "type": "number"
+        },
+        "mechanicalGrip": {
+          "type": "number"
+        },
+        "aeroGrip": {
+          "type": "number"
+        },
+        "drsEnabled": {
+          "type": "boolean"
+        },
+        "drsDragReduction": {
+          "type": "number"
+        },
+        "drsGapSeconds": {
           "type": "number"
         }
       }

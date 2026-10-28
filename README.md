@@ -1,7 +1,22 @@
 # Pitwall 2000 Mods
 
-Public distribution metadata and original teaching examples for Pitwall 2000's data-only Mod API 1.
+Public distribution metadata and original creations for Pitwall 2000's data-only Mod API 1.
 The game source remains in its separate private repository.
+
+The v0.4.5.0 featured catalog replaces the original demonstration listings with six native,
+editable, text-free liveries (28 shapes each) and **Realistic Formula 1 Season**. `void_58` is
+a fictional author identity used for this release. The season contains the verified official
+standings through 25 October 2026 and transparent game estimates for performance. Its metadata
+records sources, dates and exact-layout calendar omissions. It starts a new championship at zero points.
+
+Public download counts come from GitHub release assets; likes/dislikes come from the catalog's
+rating issue reactions. Missing counts are unavailable. Publishing a user creation prepares a
+validated ZIP and opens a submission form; it requires authentication and maintainer review.
+Old example sources and immutable releases remain available for existing saves. Their historical
+catalog is archived in `archive/catalog-examples-v1.json`; they are no longer default listings.
+
+`featured/` contains original geometric configurations and sourced factual data, with no private
+game source, shipped sprite artwork, reference photographs, sponsor logos or embedded credentials.
 
 The live catalog is [catalog.json](https://raw.githubusercontent.com/Grizzly20121/Pitwall2000-Mods/main/catalog.json).
 ZIP downloads live in [versioned Releases](https://github.com/Grizzly20121/Pitwall2000-Mods/releases).

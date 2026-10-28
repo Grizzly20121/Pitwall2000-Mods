@@ -1,5 +1,39 @@
 # Creating Mod API 1 content
 
+## Mod Creator in 0.4.5.0
+
+The main-menu Mod Creator replaces Race Replay. Create/edit/preview/validate/save your own
+car, livery, track or season; Manage My Mods creates editable copies without altering immutable
+installations. Export ZIP packages or Install locally to use them through the existing selection.
+Publish / Submit prepares a ZIP and opens a GitHub issue form. Attach the ZIP or provide an
+immutable release URL. Signing in and maintainer review are separate steps; the game never
+claims that preparing a package published it. Updating an existing public mod requires ownership.
+
+Native livery layers support keyboard selection with [ and ], arrow movement, numeric X/Y,
+size/rotation, layer ordering and the existing portable format. Both livery entry points share
+the same publishing workflow. Imported sprites face downwards in the top-down editor, matching
+the game's existing car orientation. Car width/length are metres; the preview grid is one metre.
+Custom physics bounds are validated and used by the real driving and projection models.
+
+The source-project Track Editor calls the existing SVG importer. It requires Python with that
+importer's NumPy/Shapely dependencies **for authoring**. Players installing compiled track ZIPs
+do not need these tools. The technical JSON and route/marker controls expose the importer schema;
+source edits, previews, continuity/pit checks and vector tessellation use that same pipeline.
+Compilation errors identify the failing technical ID and correction. Do not bypass validation.
+
+The optional manifest `metadata` dictionary records provenance, cutoff dates and explanatory
+notes. `authoredIdentity` preserves a mod's supplied names; it does not rename built-in content.
+Optional vehicle `customCar` data adds bounded PNG sprite, metric dimensions, speed, acceleration,
+braking, grip and DRS settings. Author ZIPs declare game `>=0.4.5.0`. See generated schemas.
+The `creator-v1` packaging convention uses sorted entries, fixed timestamps, stored compression
+and explicit regular-file attributes; unchanged creations reproduce identical bytes.
+
+Catalog download totals are actual GitHub asset counts. `ratingIssue` points at a public issue
+whose +1/-1 reactions supply public votes. Without a personal `PITWALL_GITHUB_TOKEN` environment
+variable, voting opens the GitHub page and requires the player to sign in and choose a reaction.
+Tokens are never stored in mod packages or shipped with the game. Offline cached totals are dated;
+unavailable totals stay unavailable.
+
 Players need only the game and a ZIP. Python and the SVG authoring pipeline are author tools.
 Never ask players to install Python, an editor, an importer, a plugin, or source code.
 
