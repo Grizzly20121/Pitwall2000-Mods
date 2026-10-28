@@ -214,6 +214,15 @@ see [Godot's runtime image API](https://docs.godotengine.org/en/stable/classes/c
 
 ## Errors and updates
 
+Creator season exports may include `customRules` on each calendar round and
+`customFastestLapPoints` on the championship. These optional API 1 fields require
+game 0.4.5.0 or later. Round rules keep the authored fuel/tyre multipliers, weather,
+temperature, race-control flags, duration and start time in the real race configuration.
+Their track, laps, duration and practice/qualifying flags must agree with the calendar.
+Timed qualifying converts its minute budget into the existing bounded attempt model
+(one attempt per three minutes, clamped to 1–12); it is not a live qualifying clock.
+Omit these fields to retain the existing championship defaults.
+
 `Immutable-version conflict` means the same ID/version was rebuilt with different bytes: increment
 the version. `Missing ...` names the dependency and constraint to install/import. `Overlapping
 replacement target` requires choosing one replacement. `Missing track/layout` requires its package

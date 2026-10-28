@@ -216,6 +216,9 @@
             "type": "integer"
           }
         },
+        "customFastestLapPoints": {
+          "type": "integer"
+        },
         "calendar": {
           "type": "array",
           "maxItems": 20000,
@@ -237,6 +240,9 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "customRules": {
+          "$ref": "#/$defs/SandboxRound"
+        },
         "id": {
           "type": "string",
           "maxLength": 16384
@@ -276,6 +282,97 @@
         "eventImage": {
           "type": "string",
           "maxLength": 16384
+        }
+      }
+    },
+    "SandboxRound": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "eventHours": {
+          "type": "number"
+        },
+        "startHour": {
+          "type": "number"
+        },
+        "durationMinutes": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "trackId": {
+          "type": "string",
+          "maxLength": 16384
+        },
+        "laps": {
+          "type": "integer"
+        },
+        "daysAfterStart": {
+          "type": "integer"
+        },
+        "practice": {
+          "type": "boolean"
+        },
+        "qualifying": {
+          "type": "boolean"
+        },
+        "qualifyingMinutes": {
+          "type": "integer"
+        },
+        "tyreWear": {
+          "type": "number"
+        },
+        "fuelUse": {
+          "type": "number"
+        },
+        "mechanicalFailures": {
+          "type": "boolean"
+        },
+        "damage": {
+          "type": "boolean"
+        },
+        "pitStops": {
+          "type": "boolean"
+        },
+        "penalties": {
+          "type": "boolean"
+        },
+        "vsc": {
+          "type": "boolean"
+        },
+        "redFlags": {
+          "type": "boolean"
+        },
+        "safetyCar": {
+          "type": "boolean"
+        },
+        "safetyCarChance": {
+          "type": "number"
+        },
+        "weather": {
+          "type": "string",
+          "enum": [
+            "Dry",
+            "Cloudy",
+            "LightRain",
+            "HeavyRain",
+            "Drying"
+          ]
+        },
+        "temperature": {
+          "type": "number"
+        },
+        "rainProbability": {
+          "type": "number"
+        },
+        "weatherChanges": {
+          "type": "boolean"
         }
       }
     }
