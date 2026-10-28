@@ -1,5 +1,7 @@
 * text=auto eol=lf
 # Preserve the exact JSON source bytes used by the immutable initial Windows-authored release.
 examples/**/*.json text eol=crlf
+# Creator-v1 exports preserve the Windows serializer's source bytes on every checkout platform.
+featured/**/*.json text eol=crlf
 *.png binary
 *.zip binary
